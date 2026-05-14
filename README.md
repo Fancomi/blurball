@@ -1,13 +1,36 @@
-# BlurBall
+<div align="center">
 
-Code and dataset for the paper: **[BlurBall: Joint Ball and Motion Blur Estimation for Table Tennis Ball Tracking]([https://cogsys-tuebingen.github.io/blurball/](https://arxiv.org/abs/2509.18387))**
+# [BlurBall: Joint Ball and Motion Blur Estimation for Table Tennis Ball Tracking](https://arxiv.org/abs/2509.18387)
 
-![demo](demo.gif)
+Thomas Gossard, Filip Radovic, Andreas Ziegler, Andreas Zell  
+University of Tübingen
+
+**CVPRW 2026 – CVSports**
+
+[[Paper](https://arxiv.org/abs/2509.18387)]
+[[Project Page](https://cogsys-tuebingen.github.io/blurball/)]
+[[Dataset](#dataset)]
+
+</div>
+
+<p align="center">
+  <img src="demo.gif" width="800"/>
+</p>
+
+## Overview
+
+BlurBall is a framework for joint table tennis ball detection and motion blur estimation in high-speed scenes.
+
+Unlike conventional point-based detectors, BlurBall explicitly models the ball motion blur and jointly predicts:
+
+- Ball location
+- Blur orientation
+- Blur extent
 
 This repository builds upon [WASB: Widely Applicable Strong Baseline for Sports Ball Detection and Tracking](https://github.com/nttcom/WASB-SBDT/) with additional training scripts, dataset support, and modifications for blur-aware ball detection.
 
 
-## Features at a Glance 🚀
+## Contributions
 
 - **New dataset**: 64k frames from real table tennis games, annotated with ball positions and explicit motion blur attributes (length + orientation).  
 - **Blur-aware labeling**: A new annotation convention placing the ball at the blur center, improving accuracy across detectors.  
