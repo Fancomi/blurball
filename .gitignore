@@ -167,3 +167,4 @@ datasets/*
 outputs
 wandb/
 weights/
+pretrained_weights/
